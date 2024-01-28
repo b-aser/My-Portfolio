@@ -1,0 +1,252 @@
+/* General */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* tRSNSITIO*/
+
+a{
+  transition: all 300ms ease;
+}
+
+/* Desktop Nav */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 1rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+  padding: 1px 10px;
+  border-radius: 30px;
+}
+
+a:hover {
+  color:ghostwhite;
+  text-underline-offset: 0.5rem;
+  text-decoration-color:ghostwhite;
+  background-color: rgb(48, 48, 48);
+}
+.logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.logo:hover {
+  cursor: default;
+}
+
+/* Section */
+section {
+  padding-top: 4hv;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* Profile Section */
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+.section_pic_container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+.section_text {
+  align-self: center;
+  text-align: center;
+}
+.section_text p {
+  font-size: 600;
+}
+.section_text_p1 {
+  text-align: center;
+}
+.section_text_p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+#social-media-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* Icons */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* ABOUT SECTION */
+#about{
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.about_container{
+  gap: 5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about_detail_container{
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about_container, .about_detail_container{
+  display: flex;
+}
+
+.about-pic{
+  border-radius: 3rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(31, 31, 31) 0.2rem solid;
+  border-color: rgb(224, 224, 224);
+  text-align: center;
+}
+
+.section-container{
+  gap: 4rem;
+  height: 80%;
+}
+
+.section_pic_container{
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* Experience Section */
+#experience{
+  position: relative;
+}
+.experience-sub-title{
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+.experience-details-continer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.article-container{
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+/* Preject Section */
+#project{
+  position: relative;
+}
+.color-container{
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+.project-img{
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+.project-title{
+  margin: 1rem;
+  color: black;
+}
+
+/* Contact Section */
+#contact{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-top{
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.2rem solid;
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+.contact-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+.contact-info p{
+  font-size: large;
+}
+.contact-icon{
+  cursor: default;
+}
+
+/* Footer Section */
+footer{
+  height: 20vh;
+  margin: 0.1rem;
+}
+footer p{
+  text-align: center;
+}
