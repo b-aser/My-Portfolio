@@ -545,7 +545,8 @@ footer p {
   .about_container {
     flex-wrap: wrap;
   }
-  #contact,#mission,
+  #contact,
+  #mission,
   #projects {
     height: fit-content;
   }
