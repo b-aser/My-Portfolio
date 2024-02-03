@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <title>My Portfolio</title>
   </head>
   <body id="home">
@@ -20,7 +20,31 @@
         </ul>
       </div>
     </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Aser Tesfaye</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
     <section id="profile">
+      <div class="section_pic_container">
+        <img
+          src="./assets/me2.JPG "
+          alt="Aser Tesfaye Profile Picture"
+          class="profile_pic"
+        />
+      </div>
       <div class="section_text">
         <p class="section_text_p1">Hello, I'm</p>
         <h1 class="title">Aser Tesfaye</h1>
@@ -29,22 +53,27 @@
           & <br />
           Programmer
         </p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
         <div id="social-media-container">
-          <a href="https://www.linkedin.com/in/aser-tesfaye" target="_blank"><img
-            src="./assets/linkedin.png"
-            alt="My linkedin profile"
-            class="icon"
+          <a href="https://www.linkedin.com/in/aser-tesfaye" target="_blank"
+            ><img
+              src="./assets/linkedin.png"
+              alt="My linkedin profile"
+              class="icon"
           /></a>
-          <a href="https://github.com/aser-tesfaye" target="_blank"><img src="./assets/github.png" alt="My github profile" class="icon" /></a>
+          <a href="https://github.com/aser-tesfaye" target="_blank"
+            ><img
+              src="./assets/github.png"
+              alt="My github profile"
+              class="icon"
+          /></a>
         </div>
       </div>
-      <div class="section_pic_container">
-        <img
-          src="./assets/me2.JPG "
-          alt="Aser Tesfaye Profile Picture"
-          class="profile_pic"
-        />
-      </div>
+      
     </section>
     <section id="about">
       <p class="section_text_p1">Get To Know More</p>
@@ -85,6 +114,12 @@
           </div>
         </div>
       </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
     </section>
     <section id="experience">
       <p class="section_text_p1">Explore My</p>
@@ -155,6 +190,12 @@
           </div>
         </div>
       </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#project'"
+      />
     </section>
     <section id="project">
       <p class="section_text_p1">Browse My Recent</p>
@@ -181,6 +222,12 @@
           </div>
         </div>
       </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
     </section>
     <section id="contact">
       <p class="section_text_p1">Get in touch</p>
@@ -232,5 +279,6 @@
       </nav>
       <p>Copyright &copy; 2024 Aser Tesfaye, All Rights Reserved.</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
