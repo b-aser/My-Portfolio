@@ -192,10 +192,7 @@ section {
   margin-top: 1rem;
   gap: 1rem;
 }
-#social-media-container a:hover {
-  text-decoration: none;
-  background-color: black;
-}
+
 
 /* Icons */
 
@@ -232,7 +229,7 @@ section {
 }
 
 .about_container {
-  gap: 5rem;
+  gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
@@ -318,7 +315,7 @@ article .icon {
 }
 
 /* Preject Section */
-#project {
+#projects {
   position: relative;
 }
 .color-container {
@@ -390,7 +387,7 @@ footer p {
     height: 83vh;
     margin-bottom: 6rem;
   }
-  .about-containers {
+  .about_container {
     flex-wrap: wrap;
   }
   #contact,
@@ -427,7 +424,7 @@ footer p {
     height: 275px;
     margin: 0 auto 2rem;
   }
-  .about-containers {
+  .about_container {
     margin-top: 0;
   }
 }
@@ -448,7 +445,7 @@ footer p {
     height: fit-content;
     margin-bottom: 2rem;
   }
-  .about-containers,
+  .about_container,
   .contact-info-top,
   .btn-container{
     flex-wrap: wrap;
