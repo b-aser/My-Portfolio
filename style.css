@@ -1,5 +1,5 @@
 /* General */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -154,7 +154,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 90vh;
 }
 .section_pic_container {
   display: flex;
@@ -193,7 +193,6 @@ section {
   gap: 1rem;
 }
 
-
 /* Icons */
 
 .icon {
@@ -221,13 +220,122 @@ section {
   color: white;
 }
 
+/* Biography Section */
+
+#biography {
+  position: relative;
+}
+#biography span {
+  color: white;
+}
+#biography .main-title {
+  font-size: 4rem;
+}
+#biography .section_text_p1 {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+.biography_detail_container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.biography_detail_container {
+  display: flex;
+  padding: 20px;
+  /* background-color: black; */
+}
+.bio_section_container {
+  height: 50%;
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.text_container p {
+  color: rgb(167, 167, 167);
+}
+/* 
+.section-container {
+  gap: 4rem;
+  height: 80%;
+} */
+
+/* Mission Section */
+
+#mission {
+  position: relative;
+}
+
+#mission .text_container {
+  margin: 2rem;
+}
+
+.about_container {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.mission_detail_container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about_container,
+.mission_detail_container {
+  display: flex;
+  /* background-color: black; */
+}
+
+.about-pic {
+  border-radius: 3rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container p,
+.text_container p {
+  color: rgb(167, 167, 167);
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: rgb(40, 40, 40);
+  border-radius: 2rem;
+  border: rgb(202, 202, 202) 0.2rem solid;
+  border-color: rgb(224, 224, 224);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+  margin-bottom: 2rem;
+}
+
 /* ABOUT SECTION */
 #about {
   position: relative;
   /* position: relative;
   flex-wrap: wrap; */
 }
-
+#about span {
+  font-size: 17px;
+  color: ghostwhite;
+}
 .about_container {
   gap: 2rem;
   margin-bottom: 2rem;
@@ -273,6 +381,7 @@ section {
 .section-container {
   gap: 4rem;
   height: 80%;
+  margin-bottom: 2rem;
 }
 
 .section_pic_container {
@@ -330,6 +439,52 @@ article .icon {
 .project-title {
   margin: 1rem;
   color: ghostwhite;
+}
+
+/* Testimony Section */
+#testimony {
+  position: relative;
+  /* position: relative;
+  flex-wrap: wrap; */
+}
+#testimony .details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: rgb(40, 40, 40);
+  border-radius: 15rem;
+  border: rgb(202, 202, 202) 0.2rem solid;
+  border-color: rgb(224, 224, 224);
+  text-align: center;
+}
+#testimony .testimony-img {
+  border-radius: 50%;
+  width: 30%;
+  height: 30%;
+}
+#testimony .project-title {
+  font-size: 1.5rem;
+}
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container p,
+.text_container p {
+  color: rgb(167, 167, 167);
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+  margin-bottom: 2rem;
+}
+
+.testimony_pic {
+  height: 80px;
+  border-radius: 50%;
+  margin: auto 0;
 }
 
 /* Contact Section */
@@ -390,7 +545,7 @@ footer p {
   .about_container {
     flex-wrap: wrap;
   }
-  #contact,
+  #contact,#mission,
   #projects {
     height: fit-content;
   }
@@ -406,14 +561,17 @@ footer p {
   .experience-details-continer {
     margin-top: 2rem;
   }
-  #profile, .section-container {
+  #profile,
+  .section-container,
+  .bio_section_container {
     display: block;
   }
   .arrow {
     display: none;
   }
   section,
-  .section-container {
+  .section-container,
+  .bio_section_container {
     height: fit-content;
   }
   section {
@@ -433,52 +591,52 @@ footer p {
   footer {
     height: 40vh;
   }
-  #profile{
+  #profile {
     height: 83vh;
     margin-bottom: 0;
-    
   }
-  article{
+  article {
     font-size: 1rem;
   }
-  footer nav{
+  footer nav {
     height: fit-content;
     margin-bottom: 2rem;
   }
   .about_container,
   .contact-info-top,
-  .btn-container{
+  .btn-container {
     flex-wrap: wrap;
   }
-  .contact-info{
+  .contact-info {
     margin: 0;
   }
-  .contact-info p, .nav-links li a{
+  .contact-info p,
+  .nav-links li a {
     font-size: 1rem;
   }
-  .experience-sub-title{
+  .experience-sub-title {
     font-size: 1.25rem;
   }
-  .logo{
+  .logo {
     font-size: 1.5rem;
   }
-  .nav-links{
+  .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
-  .section_pic_container{
+  .section_pic_container {
     width: auto;
     height: 46vw;
     justify-content: center;
   }
-  .section_text_p2{
+  .section_text_p2 {
     font-size: 1.25rem;
   }
-  .title{
+  .title {
     font-size: 2rem;
   }
-  .text_container{
+  .text_container {
     text-align: justify;
   }
 }
