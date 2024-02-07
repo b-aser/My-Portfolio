@@ -101,16 +101,13 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0)
-  );
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
-  /* border:1px solid rgba(255, 255, 255, 0.18); */
+  border:1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
 }
 .menu-links a {
   display: block;
@@ -338,9 +335,9 @@ section {
   text-align: center;
 }
 
-#mission .section-container {
+.section-container {
   gap: 4rem;
-  height: 70%;
+  height: 80%;
   margin-bottom: 2rem;
 }
 
@@ -571,9 +568,8 @@ footer p {
   .about_container {
     flex-wrap: wrap;
   }
-  
   #contact,
-  /* #mission, */
+  #mission,
   #projects {
     height: fit-content;
   }
@@ -613,9 +609,6 @@ footer p {
   .about_container {
     margin-top: 0;
   }
-  .nav-links li a {
-    font-size: 1rem;
-  }
 }
 @media screen and (max-width: 600px) {
   #contact,
@@ -629,7 +622,10 @@ footer p {
   article {
     font-size: 1rem;
   }
-
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
   .about_container,
   .contact-info-top,
   .btn-container {
@@ -638,7 +634,8 @@ footer p {
   .contact-info {
     margin: 0;
   }
-  .contact-info p {
+  .contact-info p,
+  .nav-links li a {
     font-size: 1rem;
   }
   .experience-sub-title {
