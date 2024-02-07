@@ -57,7 +57,7 @@ a:hover {
   color: ghostwhite;
   text-underline-offset: 0.5rem;
   text-decoration-color: ghostwhite;
-  background-color: rgb(48, 48, 48);
+  /* background-color: rgb(48, 48, 48); */
 }
 .logo {
   font-size: 2.5rem;
@@ -95,11 +95,22 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: black;
+  /* background-color: black; */
+  /* border-radius: 2rem; */
   width: fit-content;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  /* border:1px solid rgba(255, 255, 255, 0.18); */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 .menu-links a {
   display: block;
@@ -110,12 +121,19 @@ a:hover {
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
+.menu-links a:hover {
+  text-decoration: underline;
+  color: ghostwhite;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: ghostwhite;
+  /* background-color: rgb(48, 48, 48); */
+}
 .menu-links li {
   list-style: none;
 }
 
 .menu-links.open {
-  max-height: 300px;
+  max-height: 400px;
 }
 .hamburger-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
@@ -315,14 +333,14 @@ section {
   flex: 1;
   background: rgb(40, 40, 40);
   border-radius: 2rem;
-  border: rgb(202, 202, 202) 0.2rem solid;
+  border: rgb(202, 202, 202) 0.1rem solid;
   border-color: rgb(224, 224, 224);
   text-align: center;
 }
 
-.section-container {
+#mission .section-container {
   gap: 4rem;
-  height: 80%;
+  height: 70%;
   margin-bottom: 2rem;
 }
 
@@ -373,7 +391,7 @@ section {
   flex: 1;
   background: rgb(40, 40, 40);
   border-radius: 2rem;
-  border: rgb(202, 202, 202) 0.2rem solid;
+  border: rgb(202, 202, 202) 0.1rem solid;
   border-color: rgb(224, 224, 224);
   text-align: center;
 }
@@ -444,15 +462,14 @@ article .icon {
 /* Testimony Section */
 #testimony {
   position: relative;
-  /* position: relative;
-  flex-wrap: wrap; */
 }
+
 #testimony .details-container {
   padding: 1.5rem;
   flex: 1;
   background: rgb(40, 40, 40);
-  border-radius: 15rem;
-  border: rgb(202, 202, 202) 0.2rem solid;
+  /* border-radius: 15rem; */
+  border: rgb(202, 202, 202) 0.1rem solid;
   border-color: rgb(224, 224, 224);
   text-align: center;
 }
@@ -462,7 +479,16 @@ article .icon {
   height: 30%;
 }
 #testimony .project-title {
-  font-size: 1.5rem;
+  font-weight: 300;
+  font-size: 1rem;
+}
+#testimony .color-container p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+#testimony .icon {
+  padding-top: 5px;
+  margin: 5px;
 }
 .arrow {
   position: absolute;
@@ -499,7 +525,7 @@ article .icon {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.2rem solid;
+  border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   background: rgb(40, 40, 40);
   margin: 2rem auto;
@@ -545,8 +571,9 @@ footer p {
   .about_container {
     flex-wrap: wrap;
   }
+  
   #contact,
-  #mission,
+  /* #mission, */
   #projects {
     height: fit-content;
   }
@@ -586,6 +613,9 @@ footer p {
   .about_container {
     margin-top: 0;
   }
+  .nav-links li a {
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 600px) {
   #contact,
@@ -599,10 +629,7 @@ footer p {
   article {
     font-size: 1rem;
   }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
+
   .about_container,
   .contact-info-top,
   .btn-container {
@@ -611,8 +638,7 @@ footer p {
   .contact-info {
     margin: 0;
   }
-  .contact-info p,
-  .nav-links li a {
+  .contact-info p {
     font-size: 1rem;
   }
   .experience-sub-title {

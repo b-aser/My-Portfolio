@@ -1,18 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <title>My Portfolio</title>
-  </head>
-  <body id="home">
-    <nav id="desktop-nav">
-      <div class="logo">Aser Tesfaye</div>
-      <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <title>My Portfolio</title>
+</head>
+
+<body id="home">
+  <nav id="desktop-nav">
+    <div class="logo">Aser Tesfaye</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#biography">Bio</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimony">Testimony</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Aser Tesfaye</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <ul>
+          <li><a href="#biography" onclick="toggleMenu()">Bio</a></li>
+          <li><a href="#mission" onclick="toggleMenu()">Mission</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#testimony" onclick="toggleMenu()">Testimony</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section_pic_container">
+      <img src="./assets/me2.JPG " alt="Aser Tesfaye Profile Picture" class="profile_pic" />
+    </div>
+    <div class="section_text">
+      <p class="section_text_p1">Hello, I'm</p>
+      <h1 class="title">Aser Tesfaye</h1>
+      <p class="section_text_p2">
+        Graphics Designer <br />
+        & <br />
+        Programmer
+      </p>
+      <div class="btn-container">
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="social-media-container">
+        <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/aser-tesfaye'" />
+        <img src="./assets/github.png" alt="My github profile" class="icon"
+          onclick="location.href='https://github.com/aser-tesfaye'" />
+      </div>
+    </div>
+  </section>
+  <!-- Biography -->
+  <section id="biography">
+    <p class="section_text_p1">Get To Know More</p>
+    <h1 class="title main-title">About Me</h1>
+    <h1 class="title"><br />Biography</h1>
+    <div class="bio_section_container">
+      <div class="biography_detail_container">
+        <div class="text_container">
+          <p>
+            &emsp;Hello! My name is <span>Aser Tesfaye</span>. I am a junior
+            student at Jinka University studying B.Sc in Computer Science,
+            enrolled on 2021/2022 acadamic year and expected to be gratuated
+            on 2024/2025 acadamic year and self-taught on Graphics design and
+            programming. <br /><br />
+            &emsp;Currently I am student, but also a freelancer on Graphics
+            designer working on personal projects and client's project. During
+            my freelancing time I like being more creative and also admire
+            others' creativity.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#mission'" />
+  </section>
+  <!-- Mission -->
+  <section id="mission">
+    <p class="section_text_p1">Here is My</p>
+    <h1 class="title">Missions & Goals</h1>
+    <div class="text_container">
+      <p>My missions and goals in my career is list as follow...</p>
+    </div>
+    <div class="section-container">
+      <div class="mission_detail_container">
+        <div class="experience-details-continer">
+          <div class="about_container">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Graphics Designing</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" alt="" class="icon" />
+                  <div>
+                    <h3>Adobe Illustator</h3>
+                    <p>Advaanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="" class="icon" />
+                  <div>
+                    <h3>Adobe Photoshop</h3>
+                    <p>Advaanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="" class="icon" />
+                  <div>
+                    <h3>Wondershare Filmora</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="details-container">
+              <h2 class="experience-sub-title">Cyber Security</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" alt="" class="icon" />
+                  <div>
+                    <h3>Network Security</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="" class="icon" />
+                  <div>
+                    <h3>Cloud Computing</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="" class="icon" />
+                  <div>
+                    <h3>Threat Analysis</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="details-container">
+              <h2 class="experience-sub-title">Programming</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" alt="" class="icon" />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+
+                <article>
+                  <img src="./assets/checkmark.png" alt="" class="icon" />
+                  <div>
+                    <h3>Java</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+
+                <article>
+                  <img src="./assets/checkmark.png" alt="" class="icon" />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="" class="icon" />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="" class="icon" />
+                  <div>
+                    <h3>Javascript</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'" />
+  </section>
+  <!-- Resume -->
+  <section id="about">
+    <p class="section_text_p1">My</p>
+    <h1 class="title">Résumé</h1>
+    <div class="section-container">
+      <div class="section_pic_container">
+        <img src="./assets/me3.JPG" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about_detail_container">
+        <div class="about_container">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>
+              3+ years <br />
+              Graphics Designing <br> <span>Since 2020</span>
+            </p>
+          </div>
+
+          <div class="details-container">
+            <img src="./assets/education.png" alt="education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Sc. on Computer Science<br /><span>2022-2025</span> </p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/expertise.png" alt="education icon" class="icon" />
+            <h3>Professional Experience</h3>
+            <p>-<br /><span>2025-</span> </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <!-- Experience -->
+  <section id="experience">
+    <p class="section_text_p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-continer">
+      <div class="about_container">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Graphics Designing</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="" class="icon" />
+              <div>
+                <h3>Adobe Illustator</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="" class="icon" />
+              <div>
+                <h3>Adobe Photoshop</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="" class="icon" />
+              <div>
+                <h3>Wondershare Filmora</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Programming</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="" class="icon" />
+              <div>
+                <h3>C++</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="" class="icon" />
+              <div>
+                <h3>Java</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <!-- Project -->
+  <section id="projects">
+    <p class="section_text_p1">Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-continer">
+      <div class="about_container">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.jpg" alt="" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project One</h2>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.jpg" alt="" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Two</h2>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-4.jpg" alt="" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Three</h2>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#testimony'" />
+  </section>
+  <!-- Testimonies -->
+  <section id="testimony">
+    <p class="section_text_p1">Satisfied Customers'</p>
+    <h1 class="title">Testimony</h1>
+    <div class="testimony-details-continer">
+      <div class="about_container">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/me2.JPG" alt="" class="testimony-img" />
+          </div>
+          <img src="./assets/quotes.png" alt="communication icon" class="icon" />
+          <p>"What you are doing is really good & all leaders, not just me, is really satisfied with your work. Keep it
+            up!"<br /></p>
+          <hr>
+          <h2 class="experience-sub-title project-title">
+            <b>Ebba Temesgen</b> - JKUCSF Main Leader
+          </h2>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/testimony2.jpg" alt="" class="testimony-img" />
+          </div>
+          <img src="./assets/quotes.png" alt="communication icon" class="icon" />
+          <p>"Studing B.Sc. on Computer Science"<br /></p>
+          <hr>
+          <h2 class="experience-sub-title project-title">
+            <b>Mikiyas Daniel</b> - My Graphics
+          </h2>
+        </div>
+        <div class="details-container color-container">
+
+          <div class="article-container">
+            <img src="./assets/me2.JPG" alt="" class="testimony-img" />
+          </div>
+          <img src="./assets/quotes.png" alt="communication icon" class="icon" />
+          <p>"Studing B.Sc. on Computer Science"<br /></p>
+          <hr>
+          <h2 class="experience-sub-title project-title">
+            <b>Beza Belay</b> - Beza Gifts
+          </h2>
+
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <!-- Contact Me -->
+  <section id="contact">
+    <p class="section_text_p1">Get in touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-top">
+      <div class="contact-info">
+        <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon" />
+        <p>
+          <a href="mailto:asertesfaye@hotmail.com">asertesfaye@hotmail.com</a>
+        </p>
+      </div>
+      <div class="contact-info">
+        <img src="./assets/linkedin.png" alt="Linkedin Icon" class="icon contact-icon" />
+        <p>
+          <a href="https://www.linkedin.com/in/aser-tesfaye">Linkedin</a>
+        </p>
+      </div>
+      <div class="contact-info">
+        <img src="./assets/phone.png" alt="Phone Icon" class="icon contact-icon" />
+        <p>
+          <a href="tel://+251986087919">+251 986 087919</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links">
         <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
           <li><a href="#biography">Bio</a></li>
           <li><a href="#mission">Mission</a></li>
           <li><a href="#about">About</a></li>
@@ -22,481 +426,9 @@
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Aser Tesfaye</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#biography" onclick="toggleMenu()">Bio</a></li>
-          <li><a href="#mission" onclick="toggleMenu()">Mission</a></li>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#testimony" onclick="toggleMenu()">Testimony</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section_pic_container">
-        <img
-          src="./assets/me2.JPG "
-          alt="Aser Tesfaye Profile Picture"
-          class="profile_pic"
-        />
-      </div>
-      <div class="section_text">
-        <p class="section_text_p1">Hello, I'm</p>
-        <h1 class="title">Aser Tesfaye</h1>
-        <p class="section_text_p2">
-          Graphics Designer <br />
-          & <br />
-          Programmer
-        </p>
-        <div class="btn-container">
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="social-media-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My linkedin profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/aser-tesfaye'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My github profile"
-            class="icon"
-            onclick="location.href='https://github.com/aser-tesfaye'"
-          />
-        </div>
-      </div>
-    </section>
-    <!-- Biography -->
-    <section id="biography">
-      <p class="section_text_p1">Get To Know More</p>
-      <h1 class="title main-title">About Me</h1>
-      <h1 class="title"><br />Biography</h1>
-      <div class="bio_section_container">
-        <div class="biography_detail_container">
-          <div class="text_container">
-            <p>
-              &emsp;Hello! My name is <span>Aser Tesfaye</span>. I am a junior
-              student at Jinka University studying B.Sc in Computer Science,
-              enrolled on 2021/2022 acadamic year and expected to be gratuated
-              on 2024/2025 acadamic year and self-taught on Graphics design and
-              programming. <br /><br />
-              &emsp;Currently I am student, but also a freelancer on Graphics
-              designer working on personal projects and client's project. During
-              my freelancing time I like being more creative and also admire
-              others' creativity.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#mission'"
-      />
-    </section>
-    <!-- Mission -->
-    <section id="mission">
-      <p class="section_text_p1">Here is My</p>
-      <h1 class="title">Missions & Goals</h1>
-      <div class="text_container">
-        <p>My missions and goals in my career is list as follow...</p>
-      </div>
-      <div class="section-container">
-        <div class="mission_detail_container">
-          <div class="experience-details-continer">
-            <div class="about_container">
-              <div class="details-container">
-                <h2 class="experience-sub-title">Graphics Designing</h2>
-                <div class="article-container">
-                  <article>
-                    <img src="./assets/checkmark.png" alt="" class="icon" />
-                    <div>
-                      <h3>Adobe Illustator</h3>
-                      <p>Advaanced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="" class="icon" />
-                    <div>
-                      <h3>Adobe Photoshop</h3>
-                      <p>Advaanced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="" class="icon" />
-                    <div>
-                      <h3>Wondershare Filmora</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
-                </div>
-              </div>
+    <p>Copyright &copy; 2024 Aser Tesfaye - All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 
-              <div class="details-container">
-                <h2 class="experience-sub-title">Cyber Security</h2>
-                <div class="article-container">
-                  <article>
-                    <img src="./assets/checkmark.png" alt="" class="icon" />
-                    <div>
-                      <h3>Network Security</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="" class="icon" />
-                    <div>
-                      <h3>Cloud Computing</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="" class="icon" />
-                    <div>
-                      <h3>Threat Analysis</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                </div>
-              </div>
-
-              <div class="details-container">
-                <h2 class="experience-sub-title">Programming</h2>
-                <div class="article-container">
-                  <article>
-                    <img src="./assets/checkmark.png" alt="" class="icon" />
-                    <div>
-                      <h3>Python</h3>
-                      <p>Advanced</p>
-                    </div>
-                  </article>
-
-                  <article>
-                    <img src="./assets/checkmark.png" alt="" class="icon" />
-                    <div>
-                      <h3>Java</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
-
-                  <article>
-                    <img src="./assets/checkmark.png" alt="" class="icon" />
-                    <div>
-                      <h3>HTML</h3>
-                      <p>Advanced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="" class="icon" />
-                    <div>
-                      <h3>CSS</h3>
-                      <p>Advanced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="" class="icon" />
-                    <div>
-                      <h3>Javascript</h3>
-                      <p>Advanced</p>
-                    </div>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#about'"
-      />
-    </section>
-    <!-- Resume -->
-    <section id="about">
-      <p class="section_text_p1">My</p>
-      <h1 class="title">Resume</h1>
-      <div class="section-container">
-        <div class="section_pic_container">
-          <img src="./assets/me3.JPG" alt="Profile picture" class="about-pic" />
-        </div>
-        <div class="about_detail_container">
-          <div class="about_container">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>
-                3+ years <br />
-                Graphics Designing <br> <span>Since 2020</span>
-              </p>
-            </div>
-
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. on Computer Science<br /><span>2022-2025</span> </p>
-            </div>
-          <!-- </div>
-          <div class="text_container">
-            <p>
-              I am from Adiss Abeba, Ethiopia and Junior for studying Computer
-              Science B.Sc. Also an experienced Graphics designer, for 3+
-              years,and Programming, You can also see some of my recent works
-              below.
-            </p>
-          </div> -->
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <!-- Experience -->
-    <section id="experience">
-      <p class="section_text_p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-continer">
-        <div class="about_container">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Graphics Designing</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="" class="icon" />
-                <div>
-                  <h3>Adobe Illustator</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="" class="icon" />
-                <div>
-                  <h3>Adobe Photoshop</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="" class="icon" />
-                <div>
-                  <h3>Wondershare Filmora</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <div class="details-container">
-            <h2 class="experience-sub-title">Programming</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="" class="icon" />
-                <div>
-                  <h3>C++</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-
-              <article>
-                <img src="./assets/checkmark.png" alt="" class="icon" />
-                <div>
-                  <h3>Java</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-
-              <article>
-                <img src="./assets/checkmark.png" alt="" class="icon" />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="" class="icon" />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <!-- Project -->
-    <section id="projects">
-      <p class="section_text_p1">Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-continer">
-        <div class="about_container">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/project-1.jpg" alt="" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/project-2.jpg" alt="" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/project-4.jpg" alt="" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#testimony'"
-      />
-    </section>
-    <!-- Testimonies -->
-    <section id="testimony">
-      <p class="section_text_p1">Satisfied Customers'</p>
-      <h1 class="title">Testimonies</h1>
-      <div class="testimony-details-continer">
-        <div class="about_container">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/me2.JPG" alt="" class="testimony-img" />
-            </div>
-
-            <h2 class="experience-sub-title project-title">
-              Ebba ???? - JKUCSF Main Leader
-            </h2>
-            <img
-              src="./assets/communication.png"
-              alt="communication icon"
-              class="icon"
-            />
-            <p>"Studing B.Sc. on Computer Science"<br /></p>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/me2.JPG" alt="" class="testimony-img" />
-            </div>
-
-            <h2 class="experience-sub-title project-title">
-              Mikiyas Daniel - My Graphics
-            </h2>
-            <img
-              src="./assets/communication.png"
-              alt="communication icon"
-              class="icon"
-            />
-            <p>"Studing B.Sc. on Computer Science"<br /></p>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/me2.JPG" alt="" class="testimony-img" />
-            </div>
-
-            <h2 class="experience-sub-title project-title">
-              Beza Belay - Beza Gifts
-            </h2>
-            <img
-              src="./assets/communication.png"
-              alt="communication icon"
-              class="icon"
-            />
-            <p>"Studing B.Sc. on Computer Science"<br /></p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section_text_p1">Get in touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-top">
-        <div class="contact-info">
-          <img
-            src="./assets/email.png"
-            alt="Email Icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="mailto:asertesfaye@hotmail.com">asertesfaye@hotmail.com</a>
-          </p>
-        </div>
-        <div class="contact-info">
-          <img
-            src="./assets/linkedin.png"
-            alt="Linkedin Icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://www.linkedin.com/in/aser-tesfaye">Linkedin</a>
-          </p>
-        </div>
-        <div class="contact-info">
-          <img
-            src="./assets/phone.png"
-            alt="Phone Icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="tel://(098) 608-7919">+251 986 087919</a>
-          </p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links">
-          <ul class="nav-links">
-            <li><a href="#biography">Bio</a></li>
-            <li><a href="#mission">Mission</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#testimony">Testimony</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &copy; 2024 Aser Tesfaye, All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
 </html>
