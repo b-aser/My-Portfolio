@@ -57,7 +57,6 @@ a:hover {
   color: ghostwhite;
   text-underline-offset: 0.5rem;
   text-decoration-color: ghostwhite;
-  /* background-color: rgb(48, 48, 48); */
 }
 .logo {
   font-size: 2.5rem;
@@ -95,19 +94,20 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  /* background-color: black; */
-  /* border-radius: 2rem; */
   width: fit-content;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
-  border:1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-
 }
 .menu-links a {
   display: block;
@@ -123,7 +123,6 @@ a:hover {
   color: ghostwhite;
   text-underline-offset: 0.5rem;
   text-decoration-color: ghostwhite;
-  /* background-color: rgb(48, 48, 48); */
 }
 .menu-links li {
   list-style: none;
@@ -259,7 +258,6 @@ section {
 .biography_detail_container {
   display: flex;
   padding: 20px;
-  /* background-color: black; */
 }
 .bio_section_container {
   height: 50%;
@@ -277,11 +275,6 @@ section {
 .text_container p {
   color: rgb(167, 167, 167);
 }
-/* 
-.section-container {
-  gap: 4rem;
-  height: 80%;
-} */
 
 /* Mission Section */
 
@@ -307,7 +300,6 @@ section {
 .about_container,
 .mission_detail_container {
   display: flex;
-  /* background-color: black; */
 }
 
 .about-pic {
@@ -344,8 +336,6 @@ section {
 /* ABOUT SECTION */
 #about {
   position: relative;
-  /* position: relative;
-  flex-wrap: wrap; */
 }
 #about span {
   font-size: 17px;
@@ -365,7 +355,6 @@ section {
 .about_container,
 .about_detail_container {
   display: flex;
-  /* background-color: black; */
 }
 
 .about-pic {
@@ -465,7 +454,6 @@ article .icon {
   padding: 1.5rem;
   flex: 1;
   background: rgb(40, 40, 40);
-  /* border-radius: 15rem; */
   border: rgb(202, 202, 202) 0.1rem solid;
   border-color: rgb(224, 224, 224);
   text-align: center;
@@ -569,7 +557,7 @@ footer p {
     flex-wrap: wrap;
   }
   #contact,
-  #mission,
+  /* #mission, */
   #projects {
     height: fit-content;
   }
