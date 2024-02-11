@@ -299,13 +299,6 @@ section {
   display: flex;
 }
 
-
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
-
 .details-container p,
 .text_container p {
   color: rgb(167, 167, 167);
@@ -336,11 +329,6 @@ section {
   font-size: 17px;
   color: ghostwhite;
 }
-.about_container {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
 
 .about_detail_container {
   justify-content: center;
@@ -357,33 +345,6 @@ section {
 
 .about-pic {
   border-radius: 2rem;
-}
-
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
-
-.details-container p,
-.text_container p {
-  color: rgb(167, 167, 167);
-}
-
-.details-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: rgb(40, 40, 40);
-  border-radius: 2rem;
-  border: rgb(202, 202, 202) 0.1rem solid;
-  border-color: rgb(224, 224, 224);
-  text-align: center;
-}
-
-.section-container {
-  gap: 4rem;
-  height: 80%;
-  /* margin-bottom: 2rem; */
 }
 
 .section_pic_container {
@@ -472,22 +433,6 @@ article .icon {
 #testimony .icon {
   padding-top: 5px;
   margin: 5px;
-}
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
-
-.details-container p,
-.text_container p {
-  color: rgb(167, 167, 167);
-}
-
-.section-container {
-  gap: 4rem;
-  height: 80%;
-  margin-bottom: 2rem;
 }
 
 .testimony_pic {
