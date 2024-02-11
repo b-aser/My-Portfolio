@@ -151,7 +151,6 @@ a:hover {
 /* Section */
 section {
   padding-top: 4hv;
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -300,9 +299,6 @@ section {
   display: flex;
 }
 
-.about-pic {
-  border-radius: 3rem;
-}
 
 .arrow {
   position: absolute;
@@ -330,6 +326,7 @@ section {
   height: 80%;
   margin-bottom: 2rem;
 }
+
 
 /* ABOUT SECTION */
 #about {
@@ -349,6 +346,9 @@ section {
   justify-content: center;
   flex-direction: column;
 }
+.about_detail_container p{
+  font-size: 15px;
+}
 
 .about_container,
 .about_detail_container {
@@ -356,7 +356,7 @@ section {
 }
 
 .about-pic {
-  border-radius: 3rem;
+  border-radius: 2rem;
 }
 
 .arrow {
@@ -383,7 +383,7 @@ section {
 .section-container {
   gap: 4rem;
   height: 80%;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .section_pic_container {
@@ -594,6 +594,9 @@ footer p {
   }
   .about_container {
     margin-top: 0;
+  }
+  .nav-links{
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 600px) {
